@@ -1,7 +1,7 @@
 # Console-Parrot-Game
 ### Hi there 👋 Welcome 
 
-Click [here]() to console the parrot.
+Click [here](https://nathanshuai.github.io/Console-Parrot-Game/) to console the parrot.
 
 <br />
 
