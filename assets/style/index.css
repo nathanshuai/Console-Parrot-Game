@@ -1,0 +1,87 @@
+@import url(./reset.css);
+
+:root {
+  --app-dark-bg: #1a1d28;
+  --app-green: #33ab4e;
+  --app-purple: #833cff;
+  --app-orange: #ff833c;
+  --app-blue: #3c57ff;
+  --app-blue-hover: #364ee6;
+  --app-red: #ff3c57;
+  --app-red-hover: #ff2846;
+  --app-white:#fff;
+}
+
+body {
+  background-color: var(--app-purple);
+}
+
+/* parrot
+*/
+
+.center {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+}
+
+figure img{
+  height: 220px;
+}
+
+
+.parrot {
+  visibility: hidden;
+}
+
+.parrot.anim {
+  animation: 0.8s calls ease-in-out;
+}
+
+@keyframes calls {
+  0%, 100% { translate: 0 0;}
+  50%      { translate: 0 -90px}     
+}
+
+/*button
+*/
+
+button {
+  margin-left: 20px;
+  margin-top: 50px;
+  width: 140px;
+  height: 45px;
+  border-radius: 70px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 800;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 26px 30px -10px;
+  transition:  all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+button + button {
+  margin-left: 30px;
+}
+
+.calls {
+  background-color: #33ab4e;
+}
+
+.calls:hover {
+  background-color: #086e20;
+}
+
+.calms {
+  background-color: #ff833c;
+}
+
+.calms:hover {
+  background-color: #ca4e06;
+}
+
